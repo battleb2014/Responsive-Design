@@ -128,16 +128,16 @@ table {
 	border-spacing: 0;
 }
 /* ^reset^ */
-
+/* General styling */
 * {
 	margin: 0;
 	padding: 0;
 }
 
 html {
-	height: 100vh;
 	width: 100vw;
 	font-size: 62.5%;
+	box-sizing: border-box;
 }
 
 h1 {
@@ -166,6 +166,16 @@ a {
 	color: black;
 }
 
+/* Body */
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+/* Header */
 header {
 	display: flex;
 	flex-direction: column;
@@ -200,14 +210,7 @@ header nav a:hover {
 	background-color: black;
 }
 
-body {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	height: 100%;
-}
-
+/* Main content */
 .wrap {
 	display: flex;
 	flex-direction: column;
@@ -222,26 +225,27 @@ body {
 
 .container {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-content: center;
 	padding: 3rem;
 	border: 1px solid white;
 }
 
-.projects {
+#projects {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-evenly;
-	height: 50rem;
+	height: 60rem;
 	margin-bottom: 3rem;
-	border: 1px solid red;
 }
 
-.projects div img {
-	width: 20rem;
-	height: 20rem;
+#projects div {
+	width: 30%;
+	text-align: center;
 }
 
-.projects div h4 {
+#projects div h4 {
 	text-align: center;
 }
 
